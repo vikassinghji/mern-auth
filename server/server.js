@@ -14,7 +14,7 @@ const app = express();
 const PORT=process.env.PORT || 4000;
 connectDB();
 
-const allowedOrigins = ['https://mern-auth-frontend-uszl.onrender.com/'];
+const allowedOrigins = ['https://mern-auth-frontend-uszl.onrender.com'];
 
 app.use(express.json());
 app.use(cookieParser());
