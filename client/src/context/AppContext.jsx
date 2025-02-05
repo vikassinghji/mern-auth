@@ -9,7 +9,7 @@ export const AppContextProvider = (props) =>{
     axios.defaults.withCredentials = true;
     
     const backendUrl = import.meta.env.VITE_BACKEND_URL;
-    const [isLoggedin, setIsLoggedin] = useState(  localStorage.getItem('login') ?  localStorage.getItem('login') : false);
+    const [isLoggedin, setIsLoggedin] = useState(  localStorage.getItem('login') ?  JSON.parse(localStorage.getItem('login')) : false);
     const [userData, setUserData] = useState(false);
 
     const getAuthState = async () =>{
