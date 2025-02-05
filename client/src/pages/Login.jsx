@@ -26,7 +26,7 @@ const Login = () => {
             
             if(data.success){
               setIsLoggedin(true);
-              localStorage.setItem('login', true);
+              localStorage.setItem('login', JSON.stringify(true));
               getUserData();
               navigate('/')
             }
@@ -39,7 +39,7 @@ const Login = () => {
 
             if(data.success){
               setIsLoggedin(true);
-               localStorage.setItem('login', true);
+              localStorage.setItem('login', JSON.stringify(true));
               getUserData();
               navigate('/')
             }
